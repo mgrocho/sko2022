@@ -6,7 +6,6 @@
   <definition><![CDATA[if
 	'Has Insurance' 
 then
-	set decision to 'Estimated Amount' * 0.5;
-    
+	set decision to 'Estimated Amount' * 0.8;
 else set decision to 'Estimated Amount' * 0.2 ;  ]]></definition>
 </ilog.rules.studio.model.brl:ActionRule>
