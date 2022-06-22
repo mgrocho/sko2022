@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.rules.studio.model.decisionservice:Operation xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.rules.studio.model.decisionservice="http://com.ibm.rules.studio/model/decisionservice.ecore" rulesetName="operation" targetRuleProjectName="Claim Decision">
+  <name>Claim-Decision</name>
+  <uuid>002efacd-72e3-4485-87c6-12e7ae0dbd8e</uuid>
+  <decisionModel href="../rules/decisionModel.dmo#570db42f-46ee-46e8-93d0-fd2d084a6b79"/>
+  <targetRuleProject href="../../Claim%20Decision#8bc70a86-fab0-408b-81b2-0f9c709c7b4c"/>
+</com.ibm.rules.studio.model.decisionservice:Operation>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.rules.studio.model.decisionmodel:DecisionModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.rules.studio.model.decisionmodel="http://com.ibm.rules.studio/model/decisionmodel.ecore">
+  <name>decisionModel</name>
+  <uuid>570db42f-46ee-46e8-93d0-fd2d084a6b79</uuid>
+  <locale>en_US</locale>
+  <definition><definitions xmlns="http://www.omg.org/spec/DMN/20180521/MODEL/" id="decisions" name="diagram" namespace="">
+    <extensionElements>
+        <locale xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" id="en_US"/>
+    </extensionElements>
+    <inputData id="node_0" name="Estimated Amount">
+        <extensionElements>
+            <initialization xmlns="http://www.ibm.com/spec/ODM/dmn.xsd">
+                <output bomType="java.lang.Long" collection="false" name="Estimated Amount"/>
+            </initialization>
+        </extensionElements>
+        <variable id="node_0_ii" name="Estimated Amount" typeRef="java.lang.Long"/>
+    </inputData>
+    <decision id="node_1" name="Reimbursement Amount">
+        <extensionElements>
+            <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="sequence">
+                <input bomType="java.lang.Long" collection="false" name="Estimated Amount"/>
+                <input bomType="java.lang.Boolean" collection="false" name="Has Insurance"/>
+                <output bomType="java.lang.Long" collection="false" name="Reimbursement Amount"/>
+                <rule defaultRule="false" href="node_1/Calculated%20Amount.drl" kind="BusinessRule" name="Calculated Amount"/>
+                <rule defaultRule="true" href="node_1/output-default-setting.drl" kind="BusinessRule" name="output-default-setting"/>
+            </ruleset>
+        </extensionElements>
+        <variable id="node_1_ii" name="Reimbursement Amount" typeRef="java.lang.Long"/>
+        <informationRequirement>
+            <requiredInput href="#node_0"/>
+        </informationRequirement>
+        <informationRequirement>
+            <requiredInput href="#node_2"/>
+        </informationRequirement>
+    </decision>
+    <inputData id="node_2" name="Has Insurance">
+        <extensionElements>
+            <initialization xmlns="http://www.ibm.com/spec/ODM/dmn.xsd">
+                <output bomType="java.lang.Boolean" collection="false" name="Has Insurance"/>
+            </initialization>
+        </extensionElements>
+        <variable id="node_2_ii" name="Has Insurance" typeRef="java.lang.Boolean"/>
+    </inputData>
+</definitions></definition>
+</com.ibm.rules.studio.model.decisionmodel:DecisionModel>
