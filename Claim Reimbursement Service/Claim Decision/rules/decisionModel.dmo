@@ -22,7 +22,6 @@
                 <input bomType="java.lang.Boolean" collection="false" name="Has Insurance"/>
                 <output bomType="java.lang.Long" collection="false" name="Reimbursement Amount"/>
                 <rule defaultRule="false" href="node_1/Calculated%20Amount.drl" kind="BusinessRule" name="Calculated Amount"/>
-                <rule defaultRule="true" href="node_1/output-default-setting.drl" kind="BusinessRule" name="output-default-setting"/>
             </ruleset>
         </extensionElements>
         <variable id="node_1_ii" name="Reimbursement Amount" typeRef="java.lang.Long"/>
