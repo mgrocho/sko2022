@@ -4,4 +4,13 @@
   <uuid>002efacd-72e3-4485-87c6-12e7ae0dbd8e</uuid>
   <decisionModel href="../rules/decisionModel.dmo#570db42f-46ee-46e8-93d0-fd2d084a6b79"/>
   <targetRuleProject href="../../Claim%20Decision#8bc70a86-fab0-408b-81b2-0f9c709c7b4c"/>
+  <tags key="operationDescription">
+    <value><![CDATA[""]]></value>
+  </tags>
+  <tags key="operationName">
+    <value><![CDATA["Claim-Decision"]]></value>
+  </tags>
+  <tags key="exposedAtRuntime">
+    <value><![CDATA[true]]></value>
+  </tags>
 </com.ibm.rules.studio.model.decisionservice:Operation>
